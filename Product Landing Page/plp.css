@@ -1,0 +1,253 @@
+:root{
+    --black: hsl(247, 12%, 15%);
+    --text: hsl(0, 0%, 33%);
+    --pale: hsl(240, 9%, 11%);
+    --cool-color: #222131; 
+   }
+   
+   *{
+    margin: 0;
+   }
+   
+   body{
+    background-color: var(--pale);
+   }
+   
+   #header-img{
+    width: 60px;
+    object-fit: contain;
+   }
+   
+   #nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--black);
+    padding: 10px;
+   }
+   
+   .nav-links{
+    display: flex;
+    list-style: none;
+   }
+   
+   .nav-links a{
+    text-decoration: none;
+    color:  var(--text);
+    padding: 0 10px;
+   }
+   
+   .logo-container{
+    display: flex;
+    align-items: center;   
+   }
+   
+   .the-product{
+    font-size: 25px;
+    color: hsl(0, 1%, 41%);
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: "montserrat";
+   }
+   
+   #email-section {
+    margin-top: 100px;
+   }
+   
+   input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 3.5px solid var(--cool-color);
+    background-color: var(--pale);
+   }
+   
+   ::-webkit-input-placeholder{
+    color: #00fbff;
+   }
+   
+   #submit{
+    background-color: #090e5b;
+    color: #00fbff;
+    cursor: pointer;
+   }
+   
+   #value{
+    color: aliceblue;
+   }
+   
+   section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 140px;
+    visibility: hidden;
+   }
+   
+   section {
+    margin: 40px 20px;
+    text-align: center;
+   }
+   
+   #exp{
+    margin-bottom: 3px;
+    font-family: "Dancing Script";
+    color:#e93131;
+    font-size: 45px;
+   }
+   
+   .icon{
+    color: #00fbff;
+    margin-right: 30px; 
+   }
+   
+   h2{
+    color: #00fbff;
+   }
+   
+   p{
+    color:#0088ff;
+   }
+   
+   #features {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+   }
+   .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: "montserrat";
+   }
+   
+   #video{
+    width: 100%;
+   }
+   
+   .product-image{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+   }
+   
+   .product1 {
+    background-image: URL(https://media.titanbooks.com/catalog/products/CourtofOwls.jpg);
+   }
+   
+   .card {
+    background-color: rgb(68, 44, 44);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+   }
+   
+   .inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+   }
+   
+   .content {
+    font-family: "montserrat";
+    color: #025c88;
+    margin-bottom: 10px;
+   }
+   
+   .flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   }
+   
+   .main-price{
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: "fraunces";
+    color: rgb(77, 0, 0);
+   }
+   
+   .old-price{
+    text-decoration: line-through;
+    color: grey;
+   }
+   
+   .author{
+    font-family: "montserrat";
+    letter-spacing: 5px;
+    color: var(--text);
+    text-transform: uppercase;
+   }
+   
+   .header{
+    font-family: "fraunces";
+    margin: 10px 0;
+    color: rgb(192, 0, 77);
+   }
+   
+   .add{
+    background-color: #090e5b;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: #00fbff;
+    font-family: "montserrat";
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    
+   }
+   
+   @media only screen and (min-width: 600px) {
+    #nav-bar {
+     flex-direction: row;
+    }
+   }
+   
+   @media only screen and (450px < width < 600px){
+    .card {
+     font-size: 0.85rem;
+    }
+    .product-image{
+     height: 400px;
+    }
+   }
+   
+   @media only screen and (450px <= width){
+    .card {
+     display: flex;
+     max-width: 525px;
+    }
+    .inner-card{
+     width: 300px;
+     padding: 20px;
+    }
+    .product-image{
+     width: 400px;
+     border-radius: 10px 0 0 10px;
+    }
+   }
+   
+   @media only screen and (width >= 1000px) {
+    #video {
+     width: 70%;
+    }
+    .product-image {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+   }
